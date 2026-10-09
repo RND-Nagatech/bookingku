@@ -1,0 +1,11 @@
+{
+  "name": "bookingku-templates",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix api && npm install --prefix web",
+    "dev": "concurrently \"npm run dev --prefix api\" \"npm run dev --prefix web\"",
+    "seed": "npm run seed --prefix api",
+    "build": "npm run build --prefix web"
+  },
+  "devDependencies": {"concurrently": "^9.0.0"}
+}
